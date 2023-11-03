@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Javascript Dasar dan DOM</title>
+  <style>
+    main {
+        padding-bottom: 50px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+        <div>
+            <ul>
+                <li>
+                    <h2>Object</h2>
+                    <ul>
+                        <li>
+                            <h3>Pengenalan dan Cara Membuat Object</h3>
+                            <ul>
+                                <li>
+                                    <p>object dalam javascript ini sangat berguna dalam pengembangan aplikasi. Object juga bisa berisi beragam tipe data.</p>
+                                </li>
+                                <li>
+                                    <p>untuk membuat sebuah object pada sebuah variable, kita bisa menggunakan tanda kurung kurawal.</p>
+                                </li>
+                                <li>
+                                    <p>const user = {};</p>
+                                </li>
+                                <li>
+                                    <p>Object terdiri dari pasangan key dan value, key berperan mirip seperti variable dan value merupakan nilai yang bisa berisi tipe data apapun, termasuk object lain.</p>
+                                </li>
+                                <li>
+                                    <mark>Info tambahan: Setiap key dan value bisa disebut property, dan setiap property dipisahkan oleh koma.</mark>
+                                </li>
+                                <li>
+                                    <p>Cara mengakses nilai property pada object adalah, <u>kita bisa memanggil nama object, kemudian diikuti tanda titik dan nama property nya</u>.</p>
+                                    <p>Contoh: user.firstname</p>
+                                </li>
+                                <li>
+                                    <p>Selain itu juga kita bisa memanggil property pada object dengan menggunakan tanda kurung siku</p>
+                                    <p>Contoh: user['firstname']</p>
+                                </li>
+                                <li>
+                                    <p>Pemanggilan menggunakan kurung siku biasanya digunakan saat nama property mengandung spasi</p>
+                                    <p>Contoh: user['alamat saya']</p>
+                                </li>
+                                <li>
+                                    <p>Meng-<i>Assign</i> ulang nilai property pada sebuah object</p>
+                                    <p>Contoh: book.color = 'blue';</p>
+                                </li>
+                                <li>
+                                    <mark>info tambahan: mengubah nilai berbeda dengan menginisialisasi ulang nilai</mark>
+                                </li>
+                                <li>
+                                    <p>Menghapus sebuah property menggunakan delete</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Array</h2>
+                    <ul>
+                        <li>
+                            <h3>Pengenalan dan Cara Membuat Array</h3>
+                            <ul>
+                                <li>
+                                    <p>object dalam javascript ini sangat berguna dalam pengembangan aplikasi. Object juga bisa berisi beragam tipe data.</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+  </main>
+
+  <script>
+    const user = {
+        firstName: 'Figo',
+    }
+
+    console.log(user.firstName);
+    console.log(user['firstName'])
+  </script>
+</body>
+</html>
